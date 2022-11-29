@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/courseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/course_name"
+        android:textColor="@color/orange"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="@string/my_name"
+        android:textSize="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/courseName"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/whitekeys"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/black"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/courseName"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/buttonC"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:soundEffectsEnabled="false"
+            android:onClick="onClikPlaySound"/>
+
+        <Button
+            android:id="@+id/buttonD"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:soundEffectsEnabled="false"
+            android:onClick="onClikPlaySound"/>
+
+        <Button
+            android:id="@+id/buttonE"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:soundEffectsEnabled="false"
+            android:onClick="onClikPlaySound"/>
+
+        <Button
+            android:id="@+id/buttonF"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:soundEffectsEnabled="false"
+            android:onClick="onClikPlaySound"/>
+
+        <Button
+            android:id="@+id/buttonG"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:soundEffectsEnabled="false"
+            android:onClick="onClikPlaySound"/>
+
+        <Button
+            android:id="@+id/buttonA"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:soundEffectsEnabled="false"
+            android:onClick="onClikPlaySound"/>
+
+        <Button
+            android:id="@+id/buttonB"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/white"
+            android:soundEffectsEnabled="false"
+            android:onClick="onClikPlaySound"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/blackkeys"
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="@+id/whitekeys"
+        app:layout_constraintStart_toStartOf="@id/whitekeys"
+        android:layout_marginStart="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintBottom_toBottomOf="@id/whitekeys"
+        android:layout_marginBottom="90dp">
+
+
+        <Button
+            android:id="@+id/buttonCNum"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="22dp"
+            android:backgroundTint="@color/black"
+            android:stateListAnimator="@null"
+            android:soundEffectsEnabled="false"
+            android:onClick="onClikPlaySound"/>
+
+        <Button
+            android:id="@+id/buttonDNum"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="104dp"
+            android:backgroundTint="@color/black"
+            android:stateListAnimator="@null"
+            android:soundEffectsEnabled="false"
+            android:onClick="onClikPlaySound"/>
+
+        <Button
+            android:id="@+id/buttonFNum"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="22dp"
+            android:backgroundTint="@color/black"
+            android:stateListAnimator="@null"
+            android:soundEffectsEnabled="false"
+            android:onClick="onClikPlaySound"/>
+
+        <Button
+            android:id="@+id/buttonGNum"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="22dp"
+            android:backgroundTint="@color/black"
+            android:stateListAnimator="@null"
+            android:soundEffectsEnabled="false"
+            android:onClick="onClikPlaySound"/>
+
+        <Button
+            android:id="@+id/buttonANum"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="12dp"
+            android:backgroundTint="@color/black"
+            android:stateListAnimator="@null"
+            android:soundEffectsEnabled="false"
+            android:onClick="onClikPlaySound"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
